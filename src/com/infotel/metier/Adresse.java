@@ -20,6 +20,7 @@ public class Adresse {
  private String ville;
  private String cp;
  
+ //relation d'association
  @OneToMany(mappedBy="adresse")
  private List<Personne>personnes=new ArrayList<Personne>();
 public int getIdAdresse() {
